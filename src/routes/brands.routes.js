@@ -15,7 +15,6 @@ const routes = Router();
 *    }
 *
 */
-
 routes.get('/status', BrandsController.statusApi);
 
 /**
@@ -71,7 +70,6 @@ routes.get('/installments-limit/:brand', BrandsController.limiteParcelas);
 * }
 *
 */
-
 routes.post('/pay/:brand', BrandsController.dadosPagamento);
 
 module.exports = routes;
