@@ -2,7 +2,7 @@ module.exports = {
 
     async statusApi(req, res) {
         return res.status(200).json({
-            'status': 'Serviço disponível WS2'
+            "status": "Serviço disponível WS2."
         });
     },
     async limiteParcelas(req, res) {
@@ -26,8 +26,8 @@ module.exports = {
         }
 
         return res.status(401).json({
-            resposta: 'erro',
-            detalhes: 'A bandeira informada não existe'
+            "resposta": "erro",
+            "detalhes": "A bandeira informada não existe"
         })
     },
     async dadosPagamento(req, res) {
