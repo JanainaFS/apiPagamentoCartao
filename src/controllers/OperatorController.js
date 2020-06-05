@@ -1,7 +1,7 @@
 module.exports = {
     async statusApi(req, res) {
         return res.status(200).json({
-            'status': 'Serviço disponível WS2'
+            "status": "Serviço disponível WS2."
         });
     },
     async pagCartao(req, res) {
