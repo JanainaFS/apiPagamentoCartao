@@ -13,5 +13,5 @@ app.use('/ws-brands/v1/', brandsRoutes);
 app.use('/ws-operators/v1/', operatorsRoutes);
 
 app.listen(3333, () => {
-  console.log(`Servidor rodando na porta 3333`);
+  console.log(`Servidor rodando na porta 3333.`);
 });
