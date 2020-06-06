@@ -21,7 +21,7 @@ routes.get('/status',OperatorController.statusApi);
 * @api {get} /pay/:operator
 * @apiGroup Operador
 *
-* @apiParams {operator} {String} Nome do operador do cartão.
+* @apiParam {String} operator Nome do operador do cartão.
 * 
 * @apiSuccessExample {json} Resposta de Sucesso
 *    HTTP/1.1 200 OK

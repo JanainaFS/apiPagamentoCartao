@@ -21,7 +21,7 @@ routes.get('/status', BrandsController.statusApi);
 * @api {get} /installments-limit/:brand
 * @apiGroup Bandeira
 *
-* @apiParams {brand} {String} Nome da bandeira do cartão.
+* @apiParam {String} brand Nome da bandeira do cartão.
 * 
 * @apiSuccessExample {json} Resposta de Sucesso
 *    HTTP/1.1 200 OK
@@ -49,15 +49,15 @@ routes.get('/installments-limit/:brand', BrandsController.limiteParcelas);
 * @api {get} /pay/:brand
 * @apiGroup Bandeira
 *
-* @apiParams {brand} {String} Nome da bandeira do cartão.
+* @apiParam {String} brand  Nome da bandeira do cartão.
 * 
 * @apiSuccessExample {json} Resposta de Sucesso
 *    HTTP/1.1 200 OK
 *    {
 *      "resposta": "sucesso",
-*            "nome_cliente": dados.nome_cliente,
-*            "valor_em_centavos": dados.valor_em_centavos,
-*            "parcelas": dados.parcelas
+*      "nome_cliente": dados.nome_cliente,
+*      "valor_em_centavos": dados.valor_em_centavos,
+*      "parcelas": dados.parcelas
 *    }
 *
 * @apiErrorExample

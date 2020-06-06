@@ -7,16 +7,13 @@ module.exports = {
     },
     async limiteParcelas(req, res) {
         const { brand } = req.params;
-        let limite_parcelas = 0;
+        const dados  = req.body;
 
         if (brand === 'mister' || brand === 'vista' || brand === 'daciolo') {
-            if (brand === 'mister') limite_parcelas = 12;
-            if (brand === 'vista') limite_parcelas = 6;
-            if (brand === 'daciolo') limite_parcelas = 4;
 
             return res.status(200).json({
                 "bandeira": brand,
-                "limite_parcelas": limite_parcelas,
+                "limite_parcelas": dados.limite_parcelas,
                 "operadores_permitidos": {
                     "op-01": true,
                     "op-02": true,
